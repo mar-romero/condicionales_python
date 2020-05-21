@@ -20,23 +20,62 @@ def ej1():
     # Comparadores
     # Ingrese dos números cualesquiera y realice las sigueintes
     # comparaciones entre ellos
+
     numero_1 = int(input('Ingrese el primer número:\n'))
 
     numero_2 = int(input('Ingrese el segundo número:\n'))
     
     # Compare cual de los dos números es mayor
     # Imprima en pantalla según corresponda
+   
+    if (numero_1 != numero_2) and (numero_1 > numero_2):
+        print ( numero_1, 'es mayor que', numero_2)
+   
+    elif ( numero_1 == numero_2):
+        print ( numero_2,'es igual', numero_1)
+   
+    else:
+        print ( numero_2,'es mayor que', numero_1)
 
     # Verifique si el numero_1 positivo, negativo o cero
     # Imprima el resultado en cada caso
+   
+    if ( numero_1 == 0):
+        print (' {} es igual a 0'.format( numero_1))
+   
+    elif ( numero_1 > 0):
+        print ('{} es positivo'.format(numero_1))
+   
+    else:
+        print ('{} es negativo'.format(numero_1))
 
 
     # Verifique si el numero_1 es mayor a 0 y menor a 100
     # Imprima en pantalla si se cumple o no la condición
 
+    if (numero_1 > 0) and (numero_1 < 100) or (numero_1 == 100) and (numero_1 > 100):
+        print ('{} es mayor que 0 y menor que 100' .format(numero_1))
+   
+    elif (numero_1 == 0) or (numero_1 < 0):
+        print ('{} es 0 o menor' .format(numero_1))
+   
+    elif (numero_1 == 100) or (numero_1 > 100):
+        print ('{} es 100 o mayor' .format(numero_1))
+
     # Verifique si el numero_1 es menor a 10 o el numero_2
     # es mayor a -2
     # Imprima en pantalla si se cumple o no la condición
+    if ( numero_1 < 10) and (numero_2 > -2):
+        print ('{} es menor a 10 y {} es mayor a -2' .format(numero_1, numero_2))
+    
+    elif ( numero_1 <10) and (numero_2 < -2):
+        print ('{} es menor a 10 pero {} es menor a -2' .format(numero_1, numero_2))
+    
+    elif (numero_1 > 10) and (numero_2 > -2):
+        print ('{} es mayor a 10 pero {} es mayor a -2' .format(numero_1, numero_2))
+    
+    else:
+        print ('{} es mayor a 10 y {} es menor a -2'.format(numero_1, numero_2))
 
 def ej2():
     # Ejemplos variables de texto
@@ -51,9 +90,19 @@ def ej2():
     # Compare cual de las dos palabras es mayor (alfabéticamente)
     # Imprima en pantalla según corresponda
 
+    if texto_1 > texto_2:
+        print( texto_1, "es mayor alfabeticamente")
+    
+    else:
+        print( texto_2, "Es mayor alfabeticamente")
+
     # Compare cual de las dos palabras tiene mayor
     # cantidad de letras
     # Imprima en pantalla según corresponda
+    if (len(texto_1) > len(texto_2)):
+        print (texto_1, ' tiene mas letras que', texto_2)
+    else:
+        print ("{} tiene mas letras que {}" .format(texto_2, texto_1))
 
     # Verifique si la primera letra de la primera palabra
     # es mayor a la primera letra de la segunda palabra
@@ -125,7 +174,7 @@ def ej4():
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     #ej1()
-    #ej2()
+    ej2()
     #ej3()
     #ej4()
 
