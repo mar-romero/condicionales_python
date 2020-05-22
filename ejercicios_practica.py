@@ -136,26 +136,20 @@ def ej4():
     Si se ingresa "2" por consola se deben ordenar las 3 palabras por cantidad de letras
     e imprimir en pantalla de la mayor a la menor
 
-  '''
-
-def ej5():
-    # Ejercicios de práctica con números
-       
     '''
-    Realice un programa que solicite ingresar tres valores de temperatura
-    De las temperaturas ingresadas por consola determinar:
-    1 - ¿Cuáles de ellas es la máxima temperatura ingresada?
-    2 - ¿Cuáles de ellas es la mínima temperatura ingresada?
-    3 - ¿Cuál es el promedio de las temperaturas ingresadas?
-
-    En cada caso imprimir en pantalla el resultado  
-
-    '''
-
+    pal_1 = str(input('Ingrese 3 palabra que desea:\n'))
+    pal_1.split(" " and "," and ", ")
+    or_1 = int(input ('Quiere ordenar las palabras alfabeticamente o por cantidad de letras: 1 o 2\n'))
+    pal_2,pal_3,pal_4 = pal_1.split(" " and "," and ", ")
+    
+    print(pal_2)
+    print(pal_3)
+    print(pal_4)
+    
 if __name__ == '__main__':
     print("Ejercicios de práctica")
     #ej1()
     #ej2()
-    ej3()
-    #ej4()
+    #ej3()
+    ej4()
     #ej5()

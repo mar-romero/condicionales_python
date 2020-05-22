@@ -257,3 +257,16 @@ if __name__ == '__main__':
     #ej3()
     #ej4()
 
+def ej5():
+    # Ejercicios de práctica con números
+       
+    '''
+    Realice un programa que solicite ingresar tres valores de temperatura
+    De las temperaturas ingresadas por consola determinar:
+    1 - ¿Cuáles de ellas es la máxima temperatura ingresada?
+    2 - ¿Cuáles de ellas es la mínima temperatura ingresada?
+    3 - ¿Cuál es el promedio de las temperaturas ingresadas?
+
+    En cada caso imprimir en pantalla el resultado  
+
+    '''
