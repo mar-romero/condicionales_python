@@ -93,34 +93,67 @@ def ej2():
     if texto_1 > texto_2:
         print( texto_1, "es mayor alfabeticamente")
     
+    elif texto_1 == texto_2 :
+        print('Son iguales alfabeticamente')
+    
     else:
         print( texto_2, "Es mayor alfabeticamente")
 
     # Compare cual de las dos palabras tiene mayor
     # cantidad de letras
     # Imprima en pantalla según corresponda
+    
     if (len(texto_1) > len(texto_2)):
         print (texto_1, ' tiene mas letras que', texto_2)
+    
+    elif (len(texto_1) == len(texto_2)):
+        print (texto_1, ' tiene las mismas letras que', texto_2)
+    
     else:
         print ("{} tiene mas letras que {}" .format(texto_2, texto_1))
 
     # Verifique si la primera letra de la primera palabra
     # es mayor a la primera letra de la segunda palabra
     # Imprima en pantalla según corresponda
+   
+    caracter_1= texto_1[0]
+    caracter_2 = texto_2[0]
+    
+    if ((caracter_1) > (caracter_2)):
+        print (caracter_1, ' es mas grande que',caracter_2)
 
+    elif (caracter_1) == (caracter_2):
+        print ('Son la misma letra')
+   
+    else:
+        print ("{} es mas grande que {}" .format( caracter_2, caracter_1))
+   
     copia_texto_1 = texto_1  # Copia de la variable texto_1
 
     # Verifique que copia_texto_1 es igual a texto_1
     # Imprima en pantalla según corresponda
+   
+    if (copia_texto_1 == texto_1):
+        print('Son la misma palabra')
+    
+    else:
+        print('Son palabras diferentes')
 
     # Verifique que copia_texto_1 es distinta a texto_2
     # Imprima en pantalla según corresponda
+    
+    if(copia_texto_1 != texto_2):
+        print('Son textos distintos')
+    
+    else:
+        print ('Son los mismos textos')
+
 
 def ej3():
     # Ejercicios de práctica numérica
 
     # Condicionales anidados
-    numero_1 = 7
+    numero_1 = 6
     numero_2 = -2
 
     # Verifique si el numero_1 es mayor a 5
@@ -132,10 +165,22 @@ def ej3():
     #      verifique si el numero_2 es mayor a 5
     #       --> En caso afirmativo imprima en pantalla "Resp=3"
     #       --> En caso negativo imprima en pantalla "Resp=4"
+    
+    if (numero_1 > 5):
+        if (numero_2 > 0):
+            print ('resp=1')
+        else:
+            print ('resp=2')
+    else:
+        if(numero_2 > 5):
+            print('resp=3')
+        else:
+            print('resp=4')
+   
 
     # Verifique la calificación de un estudiante según su
     # puntaje en un examen
-    puntaje = 70
+    puntaje = 50
 
     # Si el puntaje es mayor igual a 90 --> imprimir A
     # Si el puntaje es mayor igual a 80 --> imprimir B
@@ -146,21 +191,55 @@ def ej3():
     # Debe imprimir en pantalla la calificacion
     # Utilizar "if" anidados
 
+    if (puntaje >= 90):
+        print ('A')
+    elif (puntaje >= 80):
+        print ('B')
+    elif (puntaje >= 70):
+        print ('C')
+    elif (puntaje >= 60):
+        print ('D')
+    else:
+        print ('F')
+
+
 
 
 def ej4():
     # Ejemplos variables de texto
 
     texto_1 = '5'
-    texto_2 = '7'
+    texto_2 = '1'
 
     # Verifique cual cual de los dos textos es mayor alfabéticamente
     # Imprima en pantalla según corresponda
 
+    if texto_1 > texto_2:
+        print( texto_1, "es mayor alfabeticamente")
+    
+    elif texto_1 == texto_2 :
+        print('Son iguales alfabeticamente')
+    
+    else:
+        print( texto_2, "Es mayor alfabeticamente")
+
     # Transforma esas variables tipo texto y almacénalas
     # en nuevas variables númericas (int)
+    
+    numero_1 = int (texto_1)
+    numero_2 = int (texto_2)
+    
     # Repita el proceso, ¿Cuál de las nuevas variables es mayor?
     # Imprima en pantalla según corresponda
+    
+    if (numero_1 != numero_2) and (numero_1 > numero_2):
+        print ( numero_1, 'es mayor que', numero_2)
+   
+    elif ( numero_1 == numero_2):
+        print ( numero_2,'es igual', numero_1)
+   
+    else:
+        print ( numero_2,'es mayor que', numero_1)
 
     # Para pensar!
     # ¿Por qué cree que texto_2 es mayor a texto_1?
@@ -174,7 +253,7 @@ def ej4():
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     #ej1()
-    ej2()
+    #ej2()
     #ej3()
-    #ej4()
+    ej4()
 
