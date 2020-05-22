@@ -23,17 +23,54 @@ def ej1():
     si el resultado es positivo, negativo o cero.
         
     '''
+    numero_1 = int(input('Ingrese el primer número:'))
+
+    numero_2 = int(input('Ingrese el segundo número:'))
+    
+    resta = (numero_1 - numero_2)
+    
+    if (resta >= 1):
+        print('El resultado es positivo')
+    
+    elif (resta == 0):
+        print('El resultado es 0')
+    
+    else:
+        print('El resultado es negativo')
 
 def ej2():
 # Ejercicios de práctica con números
 
-  '''
+    '''
     Realice un programa que solicite el ingreso de tres números
     enteros, y luego en cada caso informe si el número es par
     o impar.
     Para cada caso imprimir el resultado en pantalla.
     
-  '''
+    '''
+
+    numero_1 = int(input('Ingrese el primer número:\n'))
+
+    numero_2 = int(input('Ingrese el segundo número:\n'))
+    
+    numero_3 = int(input('Ingrese el tercer número:\n'))
+    
+    par_1 = (numero_1 % 2)
+    par_2 = (numero_2 % 2)
+    par_3 = (numero_3 % 2)
+    
+    if (par_1 == 0):
+        print('{} es par'.format(numero_1))
+    else:
+        print( '{} es impar'.format(numero_1))
+    if (par_2 == 0):
+        print('{} es par'.format(numero_2))
+    else:
+        print( '{} es impar'.format(numero_2))
+    if (par_3 == 0):
+        print('{} es par'.format(numero_3))
+    else:
+        print( '{} es impar'.format(numero_3))
 
 def ej3():
     # Ejercicios de práctica con números
@@ -53,6 +90,36 @@ def ej3():
     
 
     '''
+
+    num_1 = float(input('Ingrese el primer número:\n'))
+
+    num_2 = float(input('Ingrese el segundo número:\n'))
+
+    ope_1 = str(input('Ingrese la la operacion que desea:\n'))
+    
+    suma = num_1 + num_2
+    res = num_1 - num_2
+    mul = num_1 * num_2
+    div = num_1 / num_2
+    pot = num_1 ** num_2
+
+    if (ope_1 == '+') :
+        print('{} es el resultado' .format(suma))
+    elif (ope_1 == '-') :
+        print('{} es el resultado' .format(res))
+    elif (ope_1 == "*") :
+        print('{} es el resultado' .format(mul))
+    elif (ope_1 == '/'):
+        print('{} es el resultado' .format(div))
+    elif (ope_1 == '**') :
+        print('{} es el resultado' .format(pot))
+    else :
+        print('No es una operacion matematica')
+        
+
+    
+
+    
 
 def ej4():
     # Ejercicios de práctica con cadenas
@@ -87,8 +154,8 @@ def ej5():
 
 if __name__ == '__main__':
     print("Ejercicios de práctica")
-    ej1()
+    #ej1()
     #ej2()
-    #ej3()
+    ej3()
     #ej4()
     #ej5()

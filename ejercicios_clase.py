@@ -252,7 +252,7 @@ def ej4():
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
-    #ej1()
+    ej1()
     #ej2()
     #ej3()
     #ej4()
