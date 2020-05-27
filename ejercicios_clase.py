@@ -285,7 +285,7 @@ def ej5():
     else:
         print('La temperatura minima es {}' .format(tem_3))
 
-    print(temp_pro)
+    print('Temperatura promedio:', temp_pro)
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
