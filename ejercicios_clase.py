@@ -250,12 +250,6 @@ def ej4():
     # responder.
     # NOTA: La respuesta no se encuentra en el apunte, sino en Google ;)
 
-if __name__ == '__main__':
-    print("Bienvenidos a otra clase de Inove con Python")
-    ej1()
-    #ej2()
-    #ej3()
-    #ej4()
 
 def ej5():
     # Ejercicios de práctica con números
@@ -270,3 +264,34 @@ def ej5():
     En cada caso imprimir en pantalla el resultado  
 
     '''
+
+    tem_1 = int(input('Ingrese una temperatura:'))
+    tem_2 = int(input('Ingrese la siguiente temperatura:'))
+    tem_3 = int(input('Ingrese la ultima temperatura:'))
+   
+    temp_pro=((tem_2 + tem_3 + tem_1)/3)
+    
+    if (tem_1 > tem_2 and tem_3):
+        print('La tempertura maximas es {}  ' .format(tem_1))
+    elif(tem_2 > tem_1 and tem_3):
+        print('La temperatura maxima es {}  ' .format(tem_2))
+    else:
+        print('La temperatura maxima es {}  ' .format(tem_3))
+    
+    if (tem_1 < tem_2 and tem_3):
+        print('La temperatura minima es {}' .format(tem_1))
+    elif(tem_2 < tem_3 and tem_1):
+        print('La temperatura minima es {}' .format(tem_2))
+    else:
+        print('La temperatura minima es {}' .format(tem_3))
+
+    print(temp_pro)
+
+if __name__ == '__main__':
+    print("Bienvenidos a otra clase de Inove con Python")
+    #ej1()
+    #ej2()
+    #ej3()
+    #ej4()
+    ej5()
+

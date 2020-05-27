@@ -114,7 +114,7 @@ def ej3():
     elif (ope_1 == '**') :
         print('{} es el resultado' .format(pot))
     else :
-        print('No es una operacion matematica')
+        print('No es una operacion mapalatica')
         
 
     
@@ -141,15 +141,15 @@ def ej4():
     pal_1.split(" " and "," and ", ")
     or_1 = int(input ('Quiere ordenar las palabras alfabeticamente o por cantidad de letras: 1 o 2\n'))
     pal_2,pal_3,pal_4 = pal_1.split(" " and "," and ", ")
+    if (or_1 == 1):
+
     
-    print(pal_2)
-    print(pal_3)
-    print(pal_4)
-    
+
+
+    input
 if __name__ == '__main__':
     print("Ejercicios de práctica")
     #ej1()
     #ej2()
     #ej3()
     ej4()
-    #ej5()
