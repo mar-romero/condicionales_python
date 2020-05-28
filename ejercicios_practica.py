@@ -142,11 +142,30 @@ def ej4():
     or_1 = int(input ('Quiere ordenar las palabras alfabeticamente o por cantidad de letras: 1 o 2\n'))
     pal_2,pal_3,pal_4 = pal_1.split(" " and "," and ", ")
     if (or_1 == 1):
+        print("Ordenar albaféticamente"
+              
+    # Inove: Nos gustaría que le des una oportunidad más a este ejercicio
+    # te proponemos que empieces analizando el problema con 2 palabras
+    # que es más sencillo
+    # Si tuviera que decidir si una palabra es mayor alfabéticamente que otra
+    # lo resolvería de esta forma:
+    # if palabra_1 > palabra_2:
+    #     print(palabra_1, 'es mayor a ', palabra_2)
+    # else
+    #     print(palabra_2, 'es mayor a ', palabra_3)
+    # Con tres palabras es exactamente lo mismo pero con más condicionales, ejemplo:
+    # if (palabra_1 > palabra_2) and (palabra_1 > palabra_3):
+    #     # Ya se que la palabra_1 es la mayor, y quien sigue?
+    #     if palabra_2 > palabra 3:              
+              # palabra_2 es mayor que palabra_3, pero palabra_1 es mayor a todas
+    #         print("orden es:",palabra_1,palabra_2,palabra_3)
+    #     else
+              # palabra_3 es mayor que palabra_2, pero palabra_1 es mayor a todas
+    #         print("orden es:",palabra_1,palabra_3,palabra_2)
+     
+    # El mismo razonamiento se debe aplicar para todas las otras condiciones y alternativas posibles
 
-    
 
-
-    input
 if __name__ == '__main__':
     print("Ejercicios de práctica")
     #ej1()
