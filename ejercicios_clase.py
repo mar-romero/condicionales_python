@@ -53,6 +53,14 @@ def ej1():
     # Verifique si el numero_1 es mayor a 0 y menor a 100
     # Imprima en pantalla si se cumple o no la condición
 
+    # Inove: En el siguiente ejercicio podría haber sido 
+    # suficiente colocar la primera sentencia condicional:
+    # if (numero_1 > 0) and (numero_1 < 100) 
+    # ya que de esa forma se esta verificando si:
+    # el "numer_1" es mayor (>) a 0" y (and) el numero_1 es menor (<) a 100
+    # me gustaría que puedas explicarme con tus palabras la razón de la condición
+    # agregada del "o" (or)
+    
     if (numero_1 > 0) and (numero_1 < 100) or (numero_1 == 100) and (numero_1 > 100):
         print ('{} es mayor que 0 y menor que 100' .format(numero_1))
    
@@ -270,6 +278,16 @@ def ej5():
     tem_3 = int(input('Ingrese la ultima temperatura:'))
    
     temp_pro=((tem_2 + tem_3 + tem_1)/3)
+    
+    # Inove: En Python es correcta la sentencia lógica
+    # tal como lo armaste, pero no en todos los lugares
+    # podrás aplicar la sentencia en este formato.
+    # Te recomiendo que para evitar un problema futuro
+    # reemaplces esta forma de sentencia:
+    # if (tem_1 > tem_2 and tem_3):
+    # por la siguiente
+    # if (tem_1 > tem_2) and (tem_1 > tem_3):
+    # Lo mismo aplica para los otros casos
     
     if (tem_1 > tem_2 and tem_3):
         print('La tempertura maximas es {}  ' .format(tem_1))
